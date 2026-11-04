@@ -2,29 +2,30 @@ import java.util.Scanner;
 
 public class BT_TUAN3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        // Bài 1: Nhập thông tin một cuốn sách
-        System.out.println("=== NHẬP THÔNG TIN SÁCH ===");
-        System.out.print("Nhập mã sách: ");
-        String maSach = scanner.nextLine();
+        System.out.println("=== BAI THUC HANH TUAN 3: BIEN, KIEU DU LIEU VA TOAN TU ===");
 
-        System.out.print("Nhập tên sách: ");
-        String tenSach = scanner.nextLine();
+        // Bài 1: Nhập thông tin sách
+        System.out.print("Nhap ma sach: ");
+        String maSach = sc.nextLine();
 
-        System.out.print("Nhập tác giả: ");
-        String tacGia = scanner.nextLine();
+        System.out.print("Nhap ten sach: ");
+        String tenSach = sc.nextLine();
 
-        System.out.print("Nhập năm xuất bản: ");
-        int namXuatBan = scanner.nextInt();
+        System.out.print("Nhap tac gia: ");
+        String tacGia = sc.nextLine();
 
-        System.out.print("Nhập đơn giá: ");
-        double donGia = scanner.nextDouble();
+        System.out.print("Nhap nam xuat ban: ");
+        int namXuatBan = sc.nextInt();
 
-        System.out.print("Nhập số lượng: ");
-        int soLuong = scanner.nextInt();
+        System.out.print("Nhap don gia: ");
+        double donGia = sc.nextDouble();
 
-        // Bài 2: Tính thành tiền = đơn giá * số lượng
+        System.out.print("Nhap so luong: ");
+        int soLuong = sc.nextInt();
+
+        // Bài 2: Tính thành tiền = đơn giá × số lượng
         double thanhTien = donGia * soLuong;
 
         // Bài 3: Phí vận chuyển = 5% giá trị sách (thành tiền)
@@ -33,19 +34,19 @@ public class BT_TUAN3 {
         // Bài 4: Tổng tiền nhập = Thành tiền + Phí vận chuyển
         double tongTienNhap = thanhTien + phiVanChuyen;
 
-        // Hiển thị kết quả ra màn hình
-        System.out.println("\n=== THÔNG TIN VÀ GIÁ TRỊ NHẬP KHO ===");
-        System.out.println("Mã sách: " + maSach);
-        System.out.println("Tên sách: " + tenSach);
-        System.out.println("Tác giả: " + tacGia);
-        System.out.println("Năm xuất bản: " + namXuatBan);
-        System.out.println("Đơn giá: " + donGia);
-        System.out.println("Số lượng: " + soLuong);
-        System.out.println("-------------------------------------");
-        System.out.println("Thành tiền: " + thanhTien);
-        System.out.println("Phí vận chuyển (5%): " + phiVanChuyen);
-        System.out.println("Tổng tiền nhập kho: " + tongTienNhap);
+        // Hiển thị kết quả
+        System.out.println("\n-----------------------------------");
+        System.out.println("=== KET QUA TINH TOAN BAI TAP TUAN 3 ===");
+        System.out.println("- Ma sach: " + maSach);
+        System.out.println("- Ten sach: " + tenSach);
+        System.out.println("- Tac gia: " + tacGia);
+        System.out.println("- Nam xuat ban: " + namXuatBan);
+        System.out.println("- Don gia: " + donGia);
+        System.out.println("- So luong: " + soLuong);
+        System.out.println("- Thanh tien: " + thanhTien);
+        System.out.println("- Phi van chuyen (5%): " + phiVanChuyen);
+        System.out.println("- Tong tien nhap: " + tongTienNhap);
 
-        scanner.close();
+        sc.close();
     }
 }
