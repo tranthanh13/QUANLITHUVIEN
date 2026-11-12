@@ -26,7 +26,6 @@ class Sach {
         System.out.println("-----------------------------------");
     }
 }
-
 public class BT_TUAN7 {
     public static void main(String[] args) {
         Sach sach1 = new Sach("B01", "Lập trình Java căn bản", "Nguyễn Văn A", 2023, 10);
