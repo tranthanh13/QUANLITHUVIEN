@@ -55,7 +55,6 @@ class Sach {
             this.namXuatBan = currentYear;
         }
     }
-
     public int getSoLuong() {
         return soLuong;
     }
