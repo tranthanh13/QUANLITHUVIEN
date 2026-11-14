@@ -22,9 +22,9 @@ public class BT_TUAN6 {
             System.out.println("7. Tính tổng giá trị (hoặc thống kê mở rộng)");
             System.out.println("8. Thoát chương trình");
             System.out.print("Mời bạn chọn chức năng (1-8): ");
-            
+        
             choice = scanner.nextInt();
-            scanner.nextLine(); // Đọc bỏ dòng thừa
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
