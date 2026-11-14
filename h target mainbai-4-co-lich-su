@@ -1,0 +1,58 @@
+[1mdiff --git a/BT_TUAN3.java b/BT_TUAN3.java[m
+[1mdeleted file mode 100644[m
+[1mindex 3adb780..0000000[m
+[1m--- a/BT_TUAN3.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,51 +0,0 @@[m
+[31m-import java.util.Scanner;[m
+[31m-[m
+[31m-public class BT_TUAN3 {[m
+[31m-    public static void main(String[] args) {[m
+[31m-        Scanner scanner = new Scanner(System.in);[m
+[31m-[m
+[31m-        // Bài 1: Nhập thông tin một cuốn sách[m
+[31m-        System.out.println("=== NHẬP THÔNG TIN SÁCH ===");[m
+[31m-        System.out.print("Nhập mã sách: ");[m
+[31m-        String maSach = scanner.nextLine();[m
+[31m-[m
+[31m-        System.out.print("Nhập tên sách: ");[m
+[31m-        String tenSach = scanner.nextLine();[m
+[31m-[m
+[31m-        System.out.print("Nhập tác giả: ");[m
+[31m-        String tacGia = scanner.nextLine();[m
+[31m-[m
+[31m-        System.out.print("Nhập năm xuất bản: ");[m
+[31m-        int namXuatBan = scanner.nextInt();[m
+[31m-[m
+[31m-        System.out.print("Nhập đơn giá: ");[m
+[31m-        double donGia = scanner.nextDouble();[m
+[31m-[m
+[31m-        System.out.print("Nhập số lượng: ");[m
+[31m-        int soLuong = scanner.nextInt();[m
+[31m-[m
+[31m-        // Bài 2: Tính thành tiền = đơn giá * số lượng[m
+[31m-        double thanhTien = donGia * soLuong;[m
+[31m-[m
+[31m-        // Bài 3: Phí vận chuyển = 5% giá trị sách (thành tiền)[m
+[31m-        double phiVanChuyen = thanhTien * 0.05;[m
+[31m-[m
+[31m-        // Bài 4: Tổng tiền nhập = Thành tiền + Phí vận chuyển[m
+[31m-        double tongTienNhap = thanhTien + phiVanChuyen;[m
+[31m-[m
+[31m-        // Hiển thị kết quả ra màn hình[m
+[31m-        System.out.println("\n=== THÔNG TIN VÀ GIÁ TRỊ NHẬP KHO ===");[m
+[31m-        System.out.println("Mã sách: " + maSach);[m
+[31m-        System.out.println("Tên sách: " + tenSach);[m
+[31m-        System.out.println("Tác giả: " + tacGia);[m
+[31m-        System.out.println("Năm xuất bản: " + namXuatBan);[m
+[31m-        System.out.println("Đơn giá: " + donGia);[m
+[31m-        System.out.println("Số lượng: " + soLuong);[m
+[31m-        System.out.println("-------------------------------------");[m
+[31m-        System.out.println("Thành tiền: " + thanhTien);[m
+[31m-        System.out.println("Phí vận chuyển (5%): " + phiVanChuyen);[m
+[31m-        System.out.println("Tổng tiền nhập kho: " + tongTienNhap);[m
+[31m-[m
+[31m-        scanner.close();[m
+[31m-    }[m
+[31m-}[m
+\ No newline at end of file[m
